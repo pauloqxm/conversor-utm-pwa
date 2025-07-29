@@ -7,10 +7,37 @@
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#0a9396" />
   <link rel="icon" href="icon-192.png" />
-  <title>Conversor de Coordenadas</title>
+  <title>Conversor UTM</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    h1 {
+      color: #0a9396;
+      font-size: 2rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      background: #0a9396;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
 </head>
-<body style="margin:0; padding:0; overflow:hidden;">
-  <iframe src="https://conversor-coordenadas.streamlit.app" width="100%" height="100%" style="border:none; position:absolute; top:0; left:0; right:0; bottom:0;"></iframe>
+<body>
+  <h1>📍 Conversor de Coordenadas</h1>
+  <p>Transforme dados entre latitude/longitude e UTM diretamente no app oficial.</p>
+  <a class="button" href="https://https://conversor-coordenadas.streamlit.app/" target="_blank">Abrir Aplicativo</a>
+
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js')
